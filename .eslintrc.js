@@ -9,8 +9,12 @@ module.exports = {
     '@vue/typescript'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-console': process.env.NODE_ENV === 'production' ? 'off' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'semi': ["error", "always"],
+    "camelcase": 'off',
+    "indent": [2, 4],
+    'vue/script-indent': ['error', 4, { 'baseIndex': 1 }],
   },
   parserOptions: {
     parser: '@typescript-eslint/parser'
